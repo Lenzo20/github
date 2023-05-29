@@ -4,6 +4,10 @@
   "main": "index.js",
   "author": "Lenzo <ozielbenyn08@gmail.com>",
   "license": "MIT",
+  "scripts": {
+    "dev": "nodemon dist/server.js",
+    "build": "npx tsc -w"
+  },
   "dependencies": {
     "dotenv": "^16.0.3",
     "express": "^4.18.2"
