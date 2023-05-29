@@ -5,18 +5,20 @@
   "author": "Lenzo <ozielbenyn08@gmail.com>",
   "license": "MIT",
   "scripts": {
-    "dev": "nodemon dist/server.js",
-    "build": "npx tsc -w"
+    "dev": "ts-node src/server.ts"
   },
   "dependencies": {
     "dotenv": "^16.0.3",
     "express": "^4.18.2"
   },
   "devDependencies": {
+    "@rocketseat/eslint-config": "^1.2.0",
     "@types/express": "^4.17.17",
     "@types/node": "^20.2.5",
     "@typescript-eslint/eslint-plugin": "^5.59.7",
     "@typescript-eslint/parser": "^5.59.7",
-    "eslint": "^8.41.0"
+    "eslint": "^8.41.0",
+    "ts-node-dev": "^2.0.0",
+    "typescript": "^5.0.4"
   }
 }
