@@ -5,7 +5,8 @@
   "author": "Lenzo <ozielbenyn08@gmail.com>",
   "license": "MIT",
   "scripts": {
-    "dev": "ts-node-dev src/server.ts"
+    "dev": "ts-node-dev src/server.ts",
+    "lint": "eslint --ext .ts src --fix"
   },
   "dependencies": {
     "dotenv": "^16.0.3",
