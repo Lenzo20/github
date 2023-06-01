@@ -1,17 +1,17 @@
 class UserControllers {
-  public index() {
-    // implementação do método index
+  public async index() {
+    // implementação do método find
   }
 
-  public create() {
+  public async create() {
     // implementação do método create
   }
 
-  public update() {
+  public async update() {
     // implementação do método update
   }
 
-  public delete() {
+  public async delete() {
     // implementação do método delete
   }
 }
