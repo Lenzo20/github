@@ -17,7 +17,5 @@ routes.put('/users', (req, res) => {
   return res.json({ Put: 'Put!' })
 })
 
-routes.delete('/users', (req, res) => {
-  return res.json({ Delete: 'Delete!' })
-})
+routes.delete('/users', UserControllers.delete)
 export = routes
