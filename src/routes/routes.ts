@@ -9,13 +9,9 @@ routes.get('/', (req, res) => {
 
 routes.get('/users', UserControllers.index)
 
-routes.post('/users', (req, res) => {
-  return res.json({ Post: 'Post!' })
-})
+routes.post('/users', UserControllers.create)
 
-routes.put('/users', (req, res) => {
-  return res.json({ Put: 'Put!' })
-})
+routes.put('/users/:id', UserControllers.update)
 
-routes.delete('/users', UserControllers.delete)
+routes.delete('/users/:id', UserControllers.delete)
 export = routes
