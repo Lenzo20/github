@@ -9,7 +9,7 @@ class UserControllers {
     if (!users || users === null || users === undefined)
       return res.json({ error: 'User Not Found' })
 
-    return res.json(users)
+    return res.json(users) // Retornando todos os dados da tabela
   }
 
   public async create() {
@@ -20,8 +20,15 @@ class UserControllers {
     // implementação do método update
   }
 
-  public async delete() {
+  public async delete(req: Request, res: Response) {
     // implementação do método delete
+    const id = req.params.id
+
+    if (!(await User.findOne({ _id: id })))
+      return res.json({ error: 'User Not Find' })
+
+    await User.findByIdAndDelete({ _id: id })
+    return res.json({ success: 'User have been deleted' })
   }
 }
 
