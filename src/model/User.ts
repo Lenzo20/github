@@ -14,7 +14,6 @@ const userSchemna = new Schema(
     },
     password: {
       type: String,
-      Selection: false,
     },
   },
   {
